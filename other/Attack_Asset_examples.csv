@@ -1,0 +1,7 @@
+,Attack Vectors,Assets
+1,The attackers trick victims into clicking on an executable by changing the icon to one of a PDF file. ,"Once the backdoor is installed, it has the ability to monitor the system as well as access to a shell. "
+2,,Successful attacks of this vulnerability can result in the takeover of the Oracle WebLogic Server. 
+3,,"When it becomes active, it performs massive DNS queries for a set of domains included in a hardcoded list of 1404 domain names. "
+4,"It tries to change the DNS server settings on the infected device, allowing an attacker to route the user traffic.","Once the DNS table is corrupted, user traffic is routed to phishing websites where they might enter sensitive data such as credit card numerations."
+5,"It will try to install several Android applications, including one that looks like a fake Threema, an end-to-end encrypted messaging application. ","After installation, it starts to gather data, such as SMS, contact lists, audio records, GPS location, system files, and MAC address. "
+6,"The infection occurs when the user tries to open one of the malicious files, which contains an application form bundled with an obfuscated macro script. ","The malware then gathers system information and files, and will try to leak it using either HTTP or DNS tunneling. "

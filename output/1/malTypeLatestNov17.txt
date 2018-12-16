@@ -1,0 +1,109 @@
+New Detection Techniques - Mylobot %  Mylobot is a very versatile downloader. It was first reported in June by Deep Instinct security research. It also contains anti-sandboxing features. For example, it remains idle after infection for 14 days, after which it starts contacting the CnC server. When it becomes active, it performs massive DNS queries for a set of domains included in a hardcoded list of 1404 domain names.  The main locations targeted by this malware include the Middle East (Iraq, Iran and Arabia Saudi), East Asia (Vietnam and China), and Argentina.  We've added NIDS signatures and updated the following correlation rule as a result of Mylobot activity: system compromise, malware infection, trojan. Related content in Open Threat Exchange: https://otx.alienvault.com/pulse/5bec53edbc977065131869ff
+
+adware 0
+bot 1
+ransomware 0
+spyware 0
+worm 1
+financial 0
+
+------------------
+
+New Detection Techniques - GhostDNS JS DNSChanger %  GhostDNS is a botnet infection spread through infected webpages. It is thought that this botnet has infected around 100,000 home router devices so far. It is unknown how long it has been active so far, but researchers estimate that initial campaigns are one year old.  The main module of GhostDNS is called DNSChanger. Its activity makes it similar to the malware with the same name. It tries to change the DNS server settings on the infected device, allowing an attacker to route the user traffic. DNSChanger includes three different modules, one of them written in JavaScript. It contains 10 different attack scripts designed to infect a total of 6 different router models. Once the DNS table is corrupted, user traffic is routed to phishing websites where they might enter sensitive data such as credit card numerations.  We've added NIDS signatures and updated the following correlation rule as a result of recent malicious activity: system compromise, exploit kit, ek payload delivered. Related content in Open Threat Exchange: https://otx.alienvault.com/pulse/5bb33e3b1106f56a6ce44632
+
+adware 0
+bot 1
+ransomware 0
+spyware 0
+worm 2
+financial 1
+
+------------------
+
+New Detection Techniques - Urpage Stealer %  Urpage is the name of an unidentified threat actor which may have some connections to Confucious, Patchwork, and Bahamut actors, according to TrendMicro security researchers. Samples share some links, domain names, and file hashes found in the CnC server.  Urpage targets Android devices. The behaviour is similar to the Confucious and Patchwork stealers. It will try to install several Android applications, including one that looks like a fake Threema, an end-to-end encrypted messaging application. After installation, it starts to gather data, such as SMS, contact lists, audio records, GPS location, system files, and MAC address. It also may install a backdoor module: a customized version of AndroRAT. The CnC traffic is base64 encoded.  Surprisingly, the same infected web pages serving the Urpage payload for Android devices were found delivering samples of Windows malware.  We've added NIDS signatures and updated the following correlation rule as a result of Urpage Stealer activity: system compromise, malware infection, trojan. Related content in Open Threat Exchange: https://otx.alienvault.com/pulse/5b86c1af84048207fdac6338
+
+adware 0
+bot 0
+ransomware 0
+spyware 1
+worm 1
+financial 0
+
+------------------
+
+New Detection Techniques - Trojan Infection %  We've added NIDS signatures and updated the following correlation rule as a result of recent malicious activity, including JunkMiner Downloader, Operation Baby, Urpage Stealer, Win32.Metamorfo.Banker, Win32/Snowman, and Zyro FTP Stealer activity: system compromise, malware infection, trojan.
+
+adware 0
+bot 0
+ransomware 0
+spyware 0
+worm 1
+financial 0
+
+------------------
+
+New Detection Techniques - Botnet Infection %  We've added NIDS signatures and updated the following correlation rule as a result of recent botnet infection activity, including Mylobot, PhanapikalBot, and TeleGbot: system compromise, malware infection, trojan.
+
+adware 0
+bot 1
+ransomware 0
+spyware 0
+worm 1
+financial 0
+
+------------------
+
+New Detection Techniques - C&C Communication %  We've updated our IDS signatures and the following correlation rule to include the list of certificates identified by Abuse.ch to be associated with malware or botnet activities: system compromise, malware infection, suspicious ssl certificate.
+
+adware 0
+bot 1
+ransomware 0
+spyware 0
+worm 1
+financial 0
+
+------------------
+
+New Detection Techniques %  We've added NIDS signatures and updated the following correlation rule as a result of recent malicious activity: system compromise, exploit kit, ek payload delivered. system compromise, malware infection, trojan. system compromise, malware infection, remote access trojan. exploitation & installation, exploit, code execution.
+
+adware 0
+bot 0
+ransomware 0
+spyware 0
+worm 1
+financial 0
+
+------------------
+
+Updated Detection Techniques - Trojan Infection %  We've updated NIDS signatures and updated the following correlation rule as a result of recent malicious activity, including FIN7 Griffon, JS/BrushaLoader CnC, Kryptik, Obfuscated PowerShell Inbound, TinyNuke: system compromise, malware, trojan.
+
+adware 0
+bot 0
+ransomware 0
+spyware 0
+worm 0
+financial 0
+
+------------------
+
+Updated Detection Techniques - C&C Communication %  We've updated our IDS signatures and the following correlation rule to include the list of certificates identified by Abuse.ch to be associated with malware or botnet activities: system compromise, malware infection, suspicious ssl certificate.
+
+adware 0
+bot 1
+ransomware 0
+spyware 0
+worm 1
+financial 0
+
+------------------
+
+Updated Detection Techniques %  We've updated our NIDS signatures and updated the following correlation rules as a result of recent malicious activity, including phishing activity, Mocker, ELF/Muhstik, PhanapikaBot, CoinMiner, Android Rootnik-Al, Kraken Ransomware, and APT32: delivery & attack, malware infection, phishing. exploitation & installation, exploit, code execution. system compromise, malware infection, trojan. system compromise, malware infection, ransomware.
+
+adware 0
+bot 0
+ransomware 2
+spyware 0
+worm 1
+financial 0
+
+------------------
