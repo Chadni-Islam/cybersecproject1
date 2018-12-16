@@ -1,4 +1,4 @@
-A Scraper - Parser for AlienVault Blog Pages
+A Scraper/Parser for AlienVault Blog Pages
 
 Aims to extract the following information: 
  - Title of the threat/malware
@@ -30,3 +30,8 @@ Explanation of process:
 11. Use google search API to search the first three nouns/vectors of asset with CAPEC data to find a relevant article. (Searching asset found to have higher accuracy than searching attack vector)
 12. Take first capec link found and scrape it to obtain a likelihood and severity rating. 
 13. Combine likelihood and severity rating into a risk rating using the rules of the following resource: https://itsecurity.uiowa.edu/resources/everyone/determining-risk-levels
+
+To Do:
+ - Improve accuracy of NER
+ - Change keywords used to be empirically identified
+ - Classify malware type. Potential source: https://www.joesandbox.com/analysispaged/0 (Identifies malware type and a lot of other information but low hit rate on return a result)
